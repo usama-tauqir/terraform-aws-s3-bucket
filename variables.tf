@@ -14,3 +14,8 @@ variable "tags" {
   description = "Extra tags to add"
   default     = {}
 }
+variable "force_destroy" {
+  type        = bool
+  description = "Delete all objects so the bucket can be destroyed"
+  default     = false
+}
